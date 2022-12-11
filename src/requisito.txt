@@ -1,0 +1,114 @@
+Componente do aplicativo:
+
+	• Este é o componente principal do aplicativo
+	
+	• Dentro deste componente crie uma variável chamada products
+	
+ 	• Esta variável deve ser um array com os seguintes valores:
+ 	
+        • Câmera, sapatos, bolsa, smartphone, suéter, relógio, fones de ouvido, livro, anel
+        
+        • Caso não queira criar a variável manualmente, você pode copiar o código do arquivo
+          “product-array.js” localizado na pasta “day-01”
+            
+            
+No carregamento da página:
+
+    	• No carregamento inicial da página, o aplicativo deve renderizar o seguinte:
+    	
+        • HEADER -> H1 -> contém o texto “Shopping Spree”
+        
+        • P -> Qualquer uma das duas strings a seguir deve ser exibida:
+        
+        • Se o usuário não tiver itens no carrinho, exiba o texto:
+       
+        
+        • “Adicionar alguns itens”
+        
+        • Se o usuário tiver um ou mais itens em seu carrinho, exiba o texto:
+        
+        • “Você tem [número de itens no carrinho] item(ns) em seu carrinho”
+                
+                
+Formulário:
+
+        • Elemento de rótulo conectado corretamente à entrada selecionada por meio de um
+       	  atributo “htmlFor” com o texto “Produtos:”
+       	 
+        • Nota: Use “htmlFor” em vez de “for”. Isso ocorre porque “for” é uma palavra reservada 
+          do JavaScript
+        
+        • Selecione a entrada com elementos de opção com valores gerados a partir da matriz 
+          “produtos”
+        
+        • Botão de envio de formulário com o texto “Adicionar produto”
+            
+            
+A renderização da lista de produtos:
+
+    	• Depois que o usuário adicionar pelo menos um produto ao carrinho, crie a seguinte
+    	  saída entre o primeiro parágrafo e o elemento de formulário:
+    	
+        • DIV (nome da classe de “itens do carrinho”) -> UL -> LI -> para cada produto no 
+          carrinho
+        
+      
+O manipulador de evento de envio de formulário:
+
+    	• Quando o usuário enviar o formulário, você deve fazer o seguinte:
+    	
+        • Atualize a variável de estado do carrinho para incluir o novo item
+        
+    	• Dicas de Desenvolvimento
+    	
+        • Para impedir que o envio do formulário atualize a página, passe um objeto de evento 
+          para o manipulador de eventos de envio e use o método “preventDefault()” para impedir 
+          que o formulário atualize a página.
+        
+Para obter o valor do elemento select, tente o seguinte:
+        
+        • Altere a parte “produtos” para o valor id que você definiu em seu elemento 	 
+          selecionado
+        
+        • Para atualizar o carrinho, você precisará usar o hook “useState” do React
+        
+        • Lembre-se, você nunca deve atualizar o estado diretamente. Você deve sempre atualizar
+          o valor do estado usando sua função setter definida quando você configura “useState”
+            
+         
+Como você não deseja modificar a matriz do carrinho diretamente, tente usar o operador spread para adicionar um novo item ao carrinho. Veja o código abaixo:
+
+            
+Outras dicas:
+
+    	• Dentro da pasta “dia-01” há um vídeo de demonstração de uma versão completa desta 		
+    	  tarefa. Este vídeo lhe dará uma idéia de como este aplicativo deve ser executado.
+    	
+        • Procure na pasta day-01 o arquivo “a-01-demo.mov”
+        
+    	• Não se preocupe em combinar o estilo do seu aplicativo com os estilos do vídeo de 
+    	  demonstração. Sinta-se à vontade para adicionar seus próprios estilos exclusivos a   
+    	  este aplicativo
+    	
+        • Observação: você provavelmente precisará alterar alguns dos estilos padrão criados 
+          pelo programa Create React App
+        
+        
+Critérios de marcação:
+
+Este projeto será classificado em 10 e será classificado com base nos seguintes critérios:
+
+    1) Todas as especificações técnicas atendem a 10 marcas
+       Total: 10 marcas
+
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
